@@ -45,26 +45,9 @@ npm install
 cd ../shm-server-front
 npm install pngquant
 npm install
+mkdir ./shm-server-back/public/
 
 echo "==We have few questions for you=="
 
 cd ../shm-server-back
 npm run setup
-
-wait
-
-
-echo "==Let's go=="
-
-cd ../shm-server-front
-npm run build
-
-cd ../
-mkdir ./shm-server-back/public/
-cp -r ./shm-server-front/build/ ./shm-server-back/public/
-
-
-cd ./shm-server-back/
-
-echo "Start the server with : npm run start"
-echo "Have a nice day!"
