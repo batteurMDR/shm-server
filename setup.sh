@@ -47,7 +47,5 @@ npm install pngquant
 npm install
 mkdir ./shm-server-back/public/
 
-echo "==We have few questions for you=="
-
-cd ../shm-server-back
-npm run setup
+echo "==Installation OK=="
+echo "do it : cd ./shm/shm-server-back/ && source ~/.profile && npm run setup"
