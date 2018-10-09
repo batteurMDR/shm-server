@@ -21,17 +21,27 @@ nvm use 8.12.0
 
 echo "==Install SHM SERVER=="
 
-mkdir shm && cd shm
+mkdir shm 
+cd ./shm
 
 git clone --depth 1  https://github.com/batteurMDR/shm-server-back.git -b dev shm-server-back
 git clone --depth 1  https://github.com/batteurMDR/shm-server-front.git -b dev shm-server-front
 
-cd shm-server-back
+cd ./shm-server-back
 npm install
+cd ../shm-server-front
+npm install -g pngquant-bin
+npm install pngquant
+npm install
+
+echo "==We have few questions for you=="
+
+cd ../shm-server-back
 npm run setup
 
+echo "==Let's go=="
+
 cd ../shm-server-front
-npm install
 npm run build
 
 cd ../
