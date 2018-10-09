@@ -10,7 +10,7 @@ curl https://www.mongodb.org/static/pgp/server-4.0.asc | apt-key add -
 echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" >> /etc/apt/sources.list.d/mongodb-org-4.0.list
 
 apt-get update
-apt-get install mongodb-org
+apt-get install mongodb-org -y 
 
 systemctl enable mongod
 systemctl start mongod
