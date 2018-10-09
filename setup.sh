@@ -27,9 +27,11 @@ git clone --depth 1  https://github.com/batteurMDR/shm-server-back.git -b dev sh
 git clone --depth 1  https://github.com/batteurMDR/shm-server-front.git -b dev shm-server-front
 
 cd shm-server-back
+npm install
 npm run setup
 
 cd ../shm-server-front
+npm install
 npm run build
 
 cd ../
