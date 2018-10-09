@@ -30,7 +30,7 @@ git clone --depth 1  https://github.com/batteurMDR/shm-server-front.git -b dev s
 cd ./shm-server-back
 npm install
 cd ../shm-server-front
-sudo npm install pngquant-bin
+npm install pngquant-bin
 npm install pngquant
 npm install
 
