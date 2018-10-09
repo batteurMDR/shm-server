@@ -4,7 +4,7 @@ echo "Welcome"
 echo "==Update and Install core dependencies=="
 
 apt update
-apt install git curl nodejs -y
+apt install git curl libpng-dev -y
 
 cd ~
 
@@ -35,6 +35,7 @@ npm install
 npm run build
 
 cd ../
+mkdir ./shm-server-back/public/
 cp ./shm-server-front/build/ ./shm-server-back/public/
 
 
