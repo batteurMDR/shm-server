@@ -30,6 +30,7 @@ source ~/.profile
 
 nvm install 8.12.0
 nvm use 8.12.0
+npm install -g pm2
 
 
 echo "==Install SHM SERVER=="
