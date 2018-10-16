@@ -43,10 +43,10 @@ git clone --depth 1  https://github.com/batteurMDR/shm-server-front.git -b dev s
 
 cd ./shm-server-back
 npm install
+mkdir ./public/
 cd ../shm-server-front
 npm install pngquant
 npm install
-mkdir ./shm-server-back/public/
 
 echo "==Installation OK=="
 echo "do it : cd ./shm/shm-server-back/ && source ~/.profile && npm run setup"
